@@ -1,8 +1,9 @@
 Pod::Spec.new do |s|
   s.name = 'ButterflyMX'
   s.version = '0.13'
-  s.source = { :http => 'https://github.com/runslikebutter/butterflymx-ios-sdk/raw/master/ButterflyMXSDK.zip' }
-  
+  s.swift_version = '4.2'
+  s.source = { :http => 'https://github.com/runslikebutter/butterflymx-ios-sdk/raw/master/ButterflyMX.zip', :flatten => true }
+
   s.summary = 'A Swift framework to implement ButterflyMX SDK'
   s.homepage = 'https://github.com/runslikebutter/butterflymx-ios-sdk'
   s.author = {'butterflymx' => 'admin@butterflymx.com'}
