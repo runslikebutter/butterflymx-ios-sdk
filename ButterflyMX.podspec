@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
   s.name = 'ButterflyMX'
-  s.version = '0.13.1'
+  s.version = '0.13.2'
   s.swift_version = '4.2'
   s.source = { :http => 'https://github.com/runslikebutter/butterflymx-ios-sdk/raw/master/ButterflyMX.zip', :flatten => true }
 
