@@ -1,8 +1,8 @@
 Pod::Spec.new do |s|
   s.name = 'BMXCore'
-  s.version = '1.0.1'
+  s.version = '1.0.2'
   s.swift_version = '4.2'
-  s.source = { :http => 'https://github.com/runslikebutter/butterflymx-ios-sdk/raw/master/BMXCore.zip', :flatten => true }
+  s.source = { :http => 'https://github.com/runslikebutter/butterflymx-ios-sdk/raw/'+s.name+'_'+s.version.to_s+'/BMXCore.zip', :flatten => true }
 
   s.summary = 'A Swift framework to implement ButterflyMX SDK'
   s.homepage = 'https://github.com/runslikebutter/butterflymx-ios-sdk'
@@ -13,5 +13,5 @@ Pod::Spec.new do |s|
   s.ios.vendored_frameworks = 'BMXCore.framework'
 
   s.dependency 'Japx/CodableAlamofire', '~> 2.0.2'
-  s.dependency 'Alamofire', '~> 4.8.2'
+  s.dependency 'Alamofire', '~> 4.9.1'
 end
