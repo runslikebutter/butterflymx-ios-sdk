@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
   s.name = 'BMXCall'
-  s.version = '1.0.3'
+  s.version = '1.0.4'
   s.swift_version = '4.2'
   s.source = { :http => 'https://github.com/runslikebutter/butterflymx-ios-sdk/raw/'+s.name+'_'+s.version.to_s+'/BMXCall.zip', :flatten => true }
 
@@ -15,13 +15,11 @@ Pod::Spec.new do |s|
 
   s.ios.preserve_path = 'pjsip/include/module.modulemap'
   s.ios.preserve_paths = 'pjsip/**/*'
-  s.ios.xcconfig = { 'HEADER_SEARCH_PATHS' => '$(inherited) "${PODS_ROOT}/BMXCall/pjsip/include"',
-                      'LIBRARY_SEARCH_PATHS' => '$(inherited) "${PODS_ROOT}/BMXCall/pjsip/lib"',
-                      'FRAMEWORK_SEARCH_PATHS' => '$(inherited) "${PODS_ROOT}/BMXCall"',
+  s.ios.xcconfig = {  'OTHER_LDFLAGS' => '$(inherited) -l"c++"',
                       'GCC_PREPROCESSOR_DEFINITIONS' => '$(inherited) PJ_AUTOCONF=1'
-                      }
+                    }
 
   s.ios.vendored_frameworks = 'BMXCall.framework'
 
-  s.dependency 'BMXCore', '~> 1.0.3'
+  s.dependency 'BMXCore', '~> 1.0.4'
 end
