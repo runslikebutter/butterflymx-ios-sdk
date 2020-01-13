@@ -15,7 +15,8 @@ Pod::Spec.new do |s|
 
   s.ios.preserve_path = 'pjsip/include/module.modulemap'
   s.ios.preserve_paths = 'pjsip/**/*'
-  s.ios.xcconfig = {  'OTHER_LDFLAGS' => '$(inherited) -l"c++"',
+  s.ios.xcconfig = {  'SWIFT_INCLUDE_PATHS' => '$(inherited) "${PODS_ROOT}/'+s.name+'/pjsip/include"',
+                      'OTHER_LDFLAGS' => '$(inherited) -l"c++"',
                       'GCC_PREPROCESSOR_DEFINITIONS' => '$(inherited) PJ_AUTOCONF=1'
                     }
 
