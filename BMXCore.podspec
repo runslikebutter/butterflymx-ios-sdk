@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
   s.name = 'BMXCore'
-  s.version = '1.0.5'
+  s.version = '1.0.6'
   s.swift_version = '4.2'
   s.source = { :http => 'https://github.com/runslikebutter/butterflymx-ios-sdk/raw/'+s.name+'_'+s.version.to_s+'/BMXCore.zip', :flatten => true }
 
@@ -14,5 +14,5 @@ Pod::Spec.new do |s|
 
   s.dependency 'Japx/CodableAlamofire', '~> 2.0.2'
   s.dependency 'Alamofire', '~> 4.9.1'
-  s.dependency 'OAuthSwift', '~> 2.0.0'
+  s.dependency 'OAuthSwift', '~> 2.1.0'
 end
