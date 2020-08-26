@@ -12,7 +12,7 @@ Pod::Spec.new do |s|
   s.ios.deployment_target = '10.0'
   s.ios.vendored_frameworks = 'BMXCore.framework'
 
-  s.dependency 'Japx/CodableAlamofire', '~> 2.0.2'
-  s.dependency 'Alamofire', '~> 4.9.1'
+  s.dependency 'Japx/CodableAlamofire', '~> 3.0.0'
+  s.dependency 'Alamofire', '~> 5.2.1'
   s.dependency 'OAuthSwift', '~> 2.1.0'
 end
