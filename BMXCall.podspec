@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
   s.name = 'BMXCall'
-  s.version = '1.0.7'
+  s.version = '1.0.8'
   s.swift_version = '5.0'
   s.source = { :http => 'https://github.com/runslikebutter/butterflymx-ios-sdk/raw/'+s.name+'_'+s.version.to_s+'/BMXCall.zip', :flatten => true }
 
@@ -22,5 +22,5 @@ Pod::Spec.new do |s|
 
   s.ios.vendored_frameworks = 'BMXCall.framework'
 
-  s.dependency 'BMXCore', '~> 1.0.7'
+  s.dependency 'BMXCore', '~> 1.0.10'
 end
