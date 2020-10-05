@@ -1,7 +1,7 @@
 Pod::Spec.new do |s|
   s.name = 'BMXCore'
-  s.version = '1.0.10'
-  s.swift_version = '5.0'
+  s.version = '1.0.11'
+  s.swift_version = '5.3'
   s.source = { :http => 'https://github.com/runslikebutter/butterflymx-ios-sdk/raw/'+s.name+'_'+s.version.to_s+'/BMXCore.zip', :flatten => true }
 
   s.summary = 'A Swift framework to implement ButterflyMX SDK'
