@@ -1,0 +1,175 @@
+// swift-interface-format-version: 1.0
+// swift-compiler-version: Apple Swift version 5.3 (swiftlang-1200.0.29.2 clang-1200.0.30.1)
+// swift-module-flags: -target x86_64-apple-ios10.0-simulator -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -O -module-name BMXCall
+import AVFoundation
+@_exported import BMXCall
+import BMXCore
+import Foundation
+import Japx
+import Pjsua
+import PushKit
+import Swift
+import UIKit
+public class SimpleStateMachine<State, Event> where State : Swift.Hashable, Event : Swift.Hashable {
+  public var currentState: State {
+    get
+  }
+  public init(initialState: State)
+  public subscript(state: State) -> [Event : State]? {
+    get
+    set(transitions)
+  }
+  public subscript(event: Event) -> State? {
+    get
+  }
+  public func transition(_ event: Event) -> State?
+  @objc deinit
+}
+public enum CallCancelReason {
+  case AnsweredByOthers, CanceledByCaller
+  public static func == (a: BMXCall.CallCancelReason, b: BMXCall.CallCancelReason) -> Swift.Bool
+  public var hashValue: Swift.Int {
+    get
+  }
+  public func hash(into hasher: inout Swift.Hasher)
+}
+public protocol BMXCallDelegate : AnyObject {
+  func incomingVideoStarted(video: UIKit.UIView)
+  func outgoingVideoStarted(video: UIKit.UIView) -> CoreGraphics.CGSize?
+  func callAccepted(_ call: BMXCall.CallStatus)
+  func callStarted(_ call: BMXCall.CallStatus)
+  func callEnded(_ call: BMXCall.CallStatus)
+  func callCanceled(_ call: BMXCall.CallStatus, reason: BMXCall.CallCancelReason)
+}
+extension BMXCallDelegate {
+  public func callAccepted(_ call: BMXCall.CallStatus)
+  public func callStarted(_ call: BMXCall.CallStatus)
+  public func callEnded(_ call: BMXCall.CallStatus)
+  public func callCanceled(_ call: BMXCall.CallStatus, reason: BMXCall.CallCancelReason)
+}
+@objc @_inheritsConvenienceInitializers @_hasMissingDesignatedInitializers public class BMXCallKit : ObjectiveC.NSObject {
+  public static let shared: BMXCall.BMXCallKit
+  weak public var delegate: BMXCall.BMXCallDelegate?
+  public var activeCall: BMXCall.CallStatus? {
+    get
+  }
+  public enum CallState {
+    case receivedPushNotification
+    case accepted
+    case ongoing
+    case idle
+    public static func == (a: BMXCall.BMXCallKit.CallState, b: BMXCall.BMXCallKit.CallState) -> Swift.Bool
+    public var hashValue: Swift.Int {
+      get
+    }
+    public func hash(into hasher: inout Swift.Hasher)
+  }
+  public enum CallOrUserEvent {
+    case callDialing
+    case userAcceptsCall
+    case callConnected
+    case callDisconnected
+    case userHangsupCall
+    case callAnsweredByOthers
+    case callCanceledByCaller
+    public static func == (a: BMXCall.BMXCallKit.CallOrUserEvent, b: BMXCall.BMXCallKit.CallOrUserEvent) -> Swift.Bool
+    public var hashValue: Swift.Int {
+      get
+    }
+    public func hash(into hasher: inout Swift.Hasher)
+  }
+  public func processCall(guid: Swift.String, completion: @escaping (Swift.Result<BMXCall.CallStatus, BMXCore.ServiceError>) -> Swift.Void)
+  public func connectSoundDevice()
+  public func disconnectSoundDevice()
+  public func processCall(payload: PushKit.PKPushPayload, completion: @escaping (Swift.Result<BMXCall.CallStatus, BMXCore.ServiceError>) -> Swift.Void)
+  public func previewCall(autoAccept: Swift.Bool = false)
+  public func answerCall()
+  public func endCall()
+  public func unmuteMic()
+  public func muteMic()
+  public func turnOnSpeaker()
+  public func turnOffSpeaker()
+  public func showOutgoingVideo()
+  public func hideOutgoingVideo()
+  public func openDoor()
+  @objc deinit
+}
+public struct IncludedContainer<T> : Swift.Decodable where T : Swift.Decodable {
+  public let included: [T]
+  public init(from decoder: Swift.Decoder) throws
+}
+public struct AttributesContainer<T> : Swift.Decodable where T : Swift.Decodable {
+  public var attributes: T
+  public init(from decoder: Swift.Decoder) throws
+}
+public struct DataContainer<T> : Swift.Decodable where T : Swift.Decodable {
+  public let data: T
+  public init(from decoder: Swift.Decoder) throws
+}
+final public class CallStatus : Japx.JapxCodable {
+  final public var type: Swift.String
+  final public var id: Swift.String
+  final public let callDetails: BMXCall.CallDetails?
+  public enum Status : Swift.String, Swift.Decodable {
+    case initializing, connecting_sip, canceled, voip_rollover, rejected, timeout_online_signal
+    public typealias RawValue = Swift.String
+    public var rawValue: Swift.String {
+      get
+    }
+    public init?(rawValue: Swift.String)
+  }
+  final public var status: BMXCall.CallStatus.Status? {
+    get
+  }
+  @objc deinit
+  public init(from decoder: Swift.Decoder) throws
+  final public func encode(to encoder: Swift.Encoder) throws
+}
+final public class CallDetails : Japx.JapxCodable {
+  final public var type: Swift.String
+  final public var id: Swift.String
+  final public var guid: Swift.String? {
+    get
+  }
+  final public var callType: Swift.String? {
+    get
+  }
+  final public var panelUserType: Swift.String? {
+    get
+  }
+  final public var notificationType: Swift.String? {
+    get
+  }
+  final public var panelName: Swift.String? {
+    get
+  }
+  final public var thumbUrl: Swift.String? {
+    get
+  }
+  final public var mediumUrl: Swift.String? {
+    get
+  }
+  final public var loggedAt: Swift.String? {
+    get
+  }
+  final public var panelId: Swift.Int? {
+    get
+  }
+  final public var panelSip: Swift.String? {
+    get
+  }
+  final public func getTitle() -> Swift.String
+  final public func getType() -> Swift.String
+  @objc deinit
+  public init(from decoder: Swift.Decoder) throws
+  final public func encode(to encoder: Swift.Encoder) throws
+}
+extension BMXCall.CallCancelReason : Swift.Equatable {}
+extension BMXCall.CallCancelReason : Swift.Hashable {}
+extension BMXCall.BMXCallKit.CallState : Swift.Equatable {}
+extension BMXCall.BMXCallKit.CallState : Swift.Hashable {}
+extension BMXCall.BMXCallKit.CallOrUserEvent : Swift.Equatable {}
+extension BMXCall.BMXCallKit.CallOrUserEvent : Swift.Hashable {}
+extension BMXCall.CallStatus.Status : Swift.Equatable {}
+extension BMXCall.CallStatus.Status : Swift.Hashable {}
+extension BMXCall.CallStatus.Status : Swift.RawRepresentable {}

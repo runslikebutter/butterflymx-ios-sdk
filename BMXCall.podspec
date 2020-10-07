@@ -1,8 +1,8 @@
 Pod::Spec.new do |s|
   s.name = 'BMXCall'
-  s.version = '1.0.9'
+  s.version = '1.0.10'
   s.swift_version = '5.3'
-  s.source = { :http => 'https://github.com/runslikebutter/butterflymx-ios-sdk/raw/'+s.name+'_'+s.version.to_s+'/BMXCall.zip', :flatten => true }
+  s.source = { :git => 'https://github.com/runslikebutter/butterflymx-ios-sdk.git', :tag => s.name+'_'+s.version.to_s }
 
   s.summary = 'A Swift framework to implement ButterflyMX SDK'
   s.homepage = 'https://github.com/runslikebutter/butterflymx-ios-sdk'
@@ -20,7 +20,7 @@ Pod::Spec.new do |s|
                       'GCC_PREPROCESSOR_DEFINITIONS' => '$(inherited) PJ_AUTOCONF=1'
                     }
 
-  s.ios.vendored_frameworks = 'BMXCall.framework'
+  s.ios.vendored_frameworks = 'BMXCall.xcframework'
 
-  s.dependency 'BMXCore', '~> 1.0.10'
+  s.dependency 'BMXCore', '~> 1.0.11'
 end
