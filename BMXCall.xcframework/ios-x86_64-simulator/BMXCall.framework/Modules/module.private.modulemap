@@ -1,4 +1,0 @@
-module Pjsua_Private {
-    private header "pjsua-lib/pjsua.h"
-    export *
-}

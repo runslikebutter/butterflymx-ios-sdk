@@ -22,11 +22,11 @@
 		</data>
 		<key>Modules/BMXCall.swiftmodule/x86_64-apple-ios-simulator.swiftinterface</key>
 		<data>
-		i3wDe9AyX6VjzRdPuKWRxX0a+qg=
+		xz9VG6w8qbc6GLtVMH7wL32MFzI=
 		</data>
 		<key>Modules/BMXCall.swiftmodule/x86_64-apple-ios-simulator.swiftmodule</key>
 		<data>
-		wyhp5KsfLkyVzZEA1hT1F8gfeB0=
+		YxFLUaSkpaPYiU2dv6spIWm4Wb8=
 		</data>
 		<key>Modules/BMXCall.swiftmodule/x86_64.swiftdoc</key>
 		<data>
@@ -34,19 +34,11 @@
 		</data>
 		<key>Modules/BMXCall.swiftmodule/x86_64.swiftinterface</key>
 		<data>
-		i3wDe9AyX6VjzRdPuKWRxX0a+qg=
+		xz9VG6w8qbc6GLtVMH7wL32MFzI=
 		</data>
 		<key>Modules/BMXCall.swiftmodule/x86_64.swiftmodule</key>
 		<data>
-		wyhp5KsfLkyVzZEA1hT1F8gfeB0=
-		</data>
-		<key>Modules/module.modulemap</key>
-		<data>
-		soyIiEjCh7o5BwRu4Ab0qa2XTgk=
-		</data>
-		<key>Modules/module.private.modulemap</key>
-		<data>
-		GuLg6R/eMyqs3ZDdDK9JIiinX1I=
+		YxFLUaSkpaPYiU2dv6spIWm4Wb8=
 		</data>
 		<key>PrivateHeaders/heuristics.h</key>
 		<data>
@@ -2016,22 +2008,22 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			i3wDe9AyX6VjzRdPuKWRxX0a+qg=
+			xz9VG6w8qbc6GLtVMH7wL32MFzI=
 			</data>
 			<key>hash2</key>
 			<data>
-			2ApP0kpQyQJz8diw/xcByOBQXPaIYTmyqs5S4qQ3RC8=
+			euYJ8ZFIm8ZviNLVNvh6gTuky+7vplvK3rjr1rb4pJw=
 			</data>
 		</dict>
 		<key>Modules/BMXCall.swiftmodule/x86_64-apple-ios-simulator.swiftmodule</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			wyhp5KsfLkyVzZEA1hT1F8gfeB0=
+			YxFLUaSkpaPYiU2dv6spIWm4Wb8=
 			</data>
 			<key>hash2</key>
 			<data>
-			PMQQ34wiyh0Vb0YI2Bq5DGYIBol8UySr1B3uF/1DP/0=
+			ahEd6amAxsIgm2qrN2Orr/bj0e2vc7qiSvJefEJ/9NE=
 			</data>
 		</dict>
 		<key>Modules/BMXCall.swiftmodule/x86_64.swiftdoc</key>
@@ -2049,44 +2041,22 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			i3wDe9AyX6VjzRdPuKWRxX0a+qg=
+			xz9VG6w8qbc6GLtVMH7wL32MFzI=
 			</data>
 			<key>hash2</key>
 			<data>
-			2ApP0kpQyQJz8diw/xcByOBQXPaIYTmyqs5S4qQ3RC8=
+			euYJ8ZFIm8ZviNLVNvh6gTuky+7vplvK3rjr1rb4pJw=
 			</data>
 		</dict>
 		<key>Modules/BMXCall.swiftmodule/x86_64.swiftmodule</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			wyhp5KsfLkyVzZEA1hT1F8gfeB0=
+			YxFLUaSkpaPYiU2dv6spIWm4Wb8=
 			</data>
 			<key>hash2</key>
 			<data>
-			PMQQ34wiyh0Vb0YI2Bq5DGYIBol8UySr1B3uF/1DP/0=
-			</data>
-		</dict>
-		<key>Modules/module.modulemap</key>
-		<dict>
-			<key>hash</key>
-			<data>
-			soyIiEjCh7o5BwRu4Ab0qa2XTgk=
-			</data>
-			<key>hash2</key>
-			<data>
-			1Qbn+ulb+etPcNf6p80jQFpaklBkNRDcZNJ20bEWEq8=
-			</data>
-		</dict>
-		<key>Modules/module.private.modulemap</key>
-		<dict>
-			<key>hash</key>
-			<data>
-			GuLg6R/eMyqs3ZDdDK9JIiinX1I=
-			</data>
-			<key>hash2</key>
-			<data>
-			YzhDtXvfIEaueVfHg9aOvN0gSSXjzlgzDuRnfwGYcFg=
+			ahEd6amAxsIgm2qrN2Orr/bj0e2vc7qiSvJefEJ/9NE=
 			</data>
 		</dict>
 		<key>PrivateHeaders/heuristics.h</key>
