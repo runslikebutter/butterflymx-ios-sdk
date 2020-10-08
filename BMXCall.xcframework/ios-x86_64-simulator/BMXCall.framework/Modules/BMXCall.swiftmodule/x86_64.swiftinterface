@@ -6,7 +6,7 @@ import AVFoundation
 import BMXCore
 import Foundation
 import Japx
-import Pjsua
+import Pjsua_Private
 import PushKit
 import Swift
 import UIKit
