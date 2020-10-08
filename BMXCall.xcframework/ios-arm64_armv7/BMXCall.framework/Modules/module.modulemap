@@ -1,0 +1,11 @@
+framework module BMXCall {
+  umbrella header "BMXCall.h"
+
+  export *
+  module * { export * }
+}
+
+module BMXCall.Swift {
+    header "BMXCall-Swift.h"
+    requires objc
+}
