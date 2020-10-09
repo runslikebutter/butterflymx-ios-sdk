@@ -10,7 +10,7 @@ Pod::Spec.new do |s|
   s.license = { :type => 'Apache-2.0', :file => 'LICENSE' }
   s.platform = :ios
   s.ios.deployment_target = '10.0'
-  s.ios.vendored_frameworks = 'BMXCore.xcframework'
+  s.vendored_frameworks = 'BMXCore.xcframework'
 
   s.dependency 'Japx/CodableAlamofire', '~> 3.0.0'
   s.dependency 'Alamofire', '~> 5.2.1'

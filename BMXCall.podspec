@@ -21,7 +21,7 @@ Pod::Spec.new do |s|
                       'GCC_PREPROCESSOR_DEFINITIONS' => '$(inherited) PJ_AUTOCONF=1'
                     }
 
-  s.ios.vendored_frameworks = 'BMXCall.xcframework'
+  s.vendored_frameworks = 'BMXCall.xcframework'
 
   s.dependency 'BMXCore', '~> 1.0.11'
 end
