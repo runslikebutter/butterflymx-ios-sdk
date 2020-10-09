@@ -1,4 +1,0 @@
-framework module BMXCore {
-  header "BMXCore-Swift.h"
-  requires objc
-}
