@@ -14,5 +14,5 @@ Pod::Spec.new do |s|
 
   s.dependency 'Japx/CodableAlamofire', '~> 3.0.0'
   s.dependency 'Alamofire', '~> 5.2.1'
-  s.dependency 'OAuthSwift', '~> 2.1.0'
+  s.dependency 'OAuthSwift', '2.1.0'
 end
