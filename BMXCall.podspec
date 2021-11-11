@@ -24,4 +24,5 @@ Pod::Spec.new do |s|
   s.vendored_frameworks = 'BMXCall.xcframework'
 
   s.dependency 'BMXCore', '~> 2.0.0'
+  s.dependency 'TwilioVideo', '~> 4.4'
 end
