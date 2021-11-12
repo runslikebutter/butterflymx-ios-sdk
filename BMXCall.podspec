@@ -12,7 +12,7 @@ Pod::Spec.new do |s|
 
   s.platform = :ios
 
-  s.ios.deployment_target = '10.0'
+  s.ios.deployment_target = '12.0'
 
   s.ios.preserve_path = 'pjsip/include/module.modulemap'
   s.ios.preserve_paths = 'pjsip/**/*'
