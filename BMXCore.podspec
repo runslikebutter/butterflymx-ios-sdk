@@ -13,6 +13,6 @@ Pod::Spec.new do |s|
   s.vendored_frameworks = 'BMXCore.xcframework'
 
   s.dependency 'Japx/Alamofire'
-  s.dependency 'Alamofire', '~> 5.2.1'
+  s.dependency 'Alamofire'
   s.dependency 'OAuthSwift', '2.1.0'
 end
