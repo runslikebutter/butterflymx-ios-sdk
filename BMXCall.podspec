@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
   s.name = 'BMXCall'
-  s.version = '2.2.1'
+  s.version = '2.2.2'
   s.swift_version = '5.3'
   s.source = { :http => 'https://github.com/runslikebutter/butterflymx-ios-sdk/raw/'+s.name+'_'+s.version.to_s+'/BMXCall.zip' }
 
@@ -12,7 +12,7 @@ Pod::Spec.new do |s|
 
   s.platform = :ios
 
-  s.ios.deployment_target = '12.0'
+  s.ios.deployment_target = '12.2'
 
   s.ios.preserve_path = 'pjsip/include/module.modulemap'
   s.ios.preserve_paths = 'pjsip/**/*'
@@ -23,6 +23,6 @@ Pod::Spec.new do |s|
 
   s.vendored_frameworks = 'BMXCall.xcframework'
 
-  s.dependency 'BMXCore', '~> 2.2.0'
-  s.dependency 'TwilioVideo', '~> 4.4'
+  s.dependency 'BMXCore', '~> 2.2.2'
+  s.dependency 'TwilioVideo', '~> 5.1'
 end
