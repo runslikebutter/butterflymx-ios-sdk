@@ -6,7 +6,7 @@ import PackageDescription
 var package = Package(
     name: "BMXCore",
     platforms: [
-        .ios(.v12)
+        .iOS(.v12)
     ],
     products: [
         .library(
@@ -15,7 +15,7 @@ var package = Package(
     ],
     dependencies: [
         .package(url: "https://github.com/Alamofire/Alamofire.git", .upToNextMajor(from: "5.6.1")),
-        .package(name: "OAuthSwift", url: "https://github.com/OAuthSwift/OAuthSwift.git", .upToNextMajor(from: "2.2.0")),
+        .package(url: "https://github.com/OAuthSwift/OAuthSwift.git", .upToNextMajor(from: "2.2.0")),
         .package(url: "https://github.com/infinum/Japx.git", .upToNextMajor(from: "4.0.0"))
     ],
     targets: [
