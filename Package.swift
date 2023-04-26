@@ -22,7 +22,7 @@ var package = Package(
         .binaryTarget(
             name: "BMXCore",
             url: "https://github.com/runslikebutter/butterflymx-ios-sdk/raw/BMXCore_2.3/BMXCore.zip",
-            checksum: "4f6a397cf3256d1686b7d9c6d9b1a6d93edea0415d4fb628c764527d7f107c2d"
+            checksum: "6bb6432b90a610ee1d0f8d9635d65d6f8f5fd0bb871b4ef1bf1848e8ded04f19"
         )
     ]
 )
